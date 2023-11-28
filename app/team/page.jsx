@@ -14,6 +14,7 @@ async function getDocs() {
   }
     `;
 
+  // Get requests used to get all instances of Team Member ( NOT AS SECURE )
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT}?query=${encodeURIComponent(query)}`,
     {
@@ -22,7 +23,7 @@ async function getDocs() {
         "Content-Type": "application/json",
       },
       next: {
-        revalidate: 0,
+        revalidate: 10,
       },
     },
   );

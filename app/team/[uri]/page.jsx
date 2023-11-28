@@ -17,6 +17,7 @@ async function getTeamMember(uri) {
     uri,
   };
 
+  // Post request used to get entire page with complex query -
   const res = await fetch(process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT, {
     method: "POST",
     headers: {
@@ -42,7 +43,6 @@ export default async function PostDetails({ params }) {
       <h1>{post ? post.title : "Loading..."}</h1>
       <h1>{post ? post.position : "Loading..."}</h1>
       <h1>{post ? post.bio : "Loading..."}</h1>
-      {/* Render other data from 'post' as needed */}
       <Image src={post.image} alt="team Member Image" width={500} height={500} />
     </main>
   );
