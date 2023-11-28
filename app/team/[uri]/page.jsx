@@ -1,9 +1,6 @@
 import Image from "next/image";
 
 async function getTeamMember(uri) {
-  console.log("Query URI :");
-  console.log(uri);
-
   const query = `
     query GetTeamMemberByUri($uri: String!) {
       teamMemberBy(uri: $uri) {
@@ -29,7 +26,6 @@ async function getTeamMember(uri) {
   });
 
   const responseBody = await res.json();
-  console.log(responseBody);
 
   if (responseBody && responseBody.data && responseBody.data.teamMemberBy) {
     return responseBody.data.teamMemberBy;
@@ -39,7 +35,6 @@ async function getTeamMember(uri) {
 }
 
 export default async function PostDetails({ params }) {
-  console.log("params: " + params.uri);
   const post = await getTeamMember(params.uri);
 
   return (

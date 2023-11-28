@@ -34,8 +34,6 @@ async function getDocs() {
 
 export default async function PostDetails() {
   const members = await getDocs();
-  console.log(members);
-
   return (
     <main>
       <nav className="flex space-x-4">

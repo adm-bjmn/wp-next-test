@@ -25,14 +25,11 @@ async function getPosts() {
   );
 
   const { data } = await res.json();
-  console.log("DATA :");
-  console.log(data);
   return data.homePages[0];
 }
 
 export default async function PostList() {
   const posts = await getPosts();
-  console.log(posts);
   return (
     <main>
       <div>{posts.homepageTitle}</div>

@@ -3,9 +3,6 @@
 import Image from "next/image";
 
 async function getPageContent(uri) {
-  console.log("Query URI :");
-  console.log(uri);
-
   const query = `
     query GetPageBy($uri: String!) {
       pageBy(uri: $uri) {
@@ -28,7 +25,6 @@ async function getPageContent(uri) {
   });
 
   const responseBody = await res.json();
-  console.log(responseBody);
 
   if (responseBody && responseBody.data && responseBody.data.pageBy) {
     return responseBody.data.pageBy;
@@ -38,10 +34,7 @@ async function getPageContent(uri) {
 }
 
 export default async function PostDetails({ params }) {
-  console.log("params: " + params.uri);
   const post = await getPageContent(params.uri);
-  console.log(post);
-
   return (
     <main>
       <div dangerouslySetInnerHTML={{ __html: post.content }} />
