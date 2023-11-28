@@ -1,15 +1,15 @@
 import Link from "next/link";
 import { Suspense } from "react";
+import Image from "next/image";
 
 async function getPosts() {
   const query = `
   {
-    posts(first: 5) {
-      nodes {
-        title
-        content
-        uri
-      }
+    homePages {
+      homepageCopy
+      homepageImage
+      homepageTitle
+      id
     }
   }
     `;
@@ -25,29 +25,19 @@ async function getPosts() {
   );
 
   const { data } = await res.json();
-
-  return data.posts.nodes;
+  console.log("DATA :");
+  console.log(data);
+  return data.homePages[0];
 }
 
 export default async function PostList() {
   const posts = await getPosts();
-
+  console.log(posts);
   return (
-    <>
-      {posts.map((post) => (
-        <div key={post.uri} className="card">
-          <Suspense>
-            <Link href={`/post/${post.uri}`}>
-              <h3>{post.title}</h3>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: post.content.slice(0, 200) + "...",
-                }}
-              />
-            </Link>
-          </Suspense>
-        </div>
-      ))}
-    </>
+    <main>
+      <div>{posts.homepageTitle}</div>
+      <div>{posts.homepageCopy}</div>
+      <Image src={posts.homepageImage} alt="team Member Image" width={500} height={500} />
+    </main>
   );
 }
