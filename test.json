@@ -1,0 +1,185 @@
+[
+  {
+    "id": 218,
+    "date": "2023-12-05T18:07:01",
+    "date_gmt": "2023-12-05T18:07:01",
+    "guid": { "rendered": "http://localhost:3000/?p=218" },
+    "modified": "2023-12-05T18:07:01",
+    "modified_gmt": "2023-12-05T18:07:01",
+    "slug": "testing-post",
+    "status": "publish",
+    "type": "post",
+    "link": "http://wp-next.com/testing-post/",
+    "title": { "rendered": "testing post" },
+    "content": { "rendered": "", "protected": false },
+    "excerpt": { "rendered": "", "protected": false },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": { "footnotes": "" },
+    "categories": [1],
+    "tags": [],
+    "acf": [],
+    "_links": {
+      "self": [{ "href": "http://wp-next.com/wp-json/wp/v2/posts/218" }],
+      "collection": [{ "href": "http://wp-next.com/wp-json/wp/v2/posts" }],
+      "about": [{ "href": "http://wp-next.com/wp-json/wp/v2/types/post" }],
+      "author": [{ "embeddable": true, "href": "http://wp-next.com/wp-json/wp/v2/users/1" }],
+      "replies": [
+        { "embeddable": true, "href": "http://wp-next.com/wp-json/wp/v2/comments?post=218" }
+      ],
+      "version-history": [
+        { "count": 1, "href": "http://wp-next.com/wp-json/wp/v2/posts/218/revisions" }
+      ],
+      "predecessor-version": [
+        { "id": 219, "href": "http://wp-next.com/wp-json/wp/v2/posts/218/revisions/219" }
+      ],
+      "wp:attachment": [{ "href": "http://wp-next.com/wp-json/wp/v2/media?parent=218" }],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://wp-next.com/wp-json/wp/v2/categories?post=218"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://wp-next.com/wp-json/wp/v2/tags?post=218"
+        }
+      ],
+      "curies": [{ "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }]
+    }
+  },
+  {
+    "id": 141,
+    "date": "2023-12-04T10:28:14",
+    "date_gmt": "2023-12-04T10:28:14",
+    "guid": { "rendered": "http://wp-next.com/?p=141" },
+    "modified": "2023-12-04T10:29:47",
+    "modified_gmt": "2023-12-04T10:29:47",
+    "slug": "testing-second-post",
+    "status": "publish",
+    "type": "post",
+    "link": "http://wp-next.com/testing-second-post/",
+    "title": { "rendered": "testing second POst" },
+    "content": { "rendered": "\n<p>I wonder how it will llok</p>\n", "protected": false },
+    "excerpt": { "rendered": "<p>I wonder how it will llok</p>\n", "protected": false },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": { "footnotes": "" },
+    "categories": [1],
+    "tags": [],
+    "acf": [],
+    "_links": {
+      "self": [{ "href": "http://wp-next.com/wp-json/wp/v2/posts/141" }],
+      "collection": [{ "href": "http://wp-next.com/wp-json/wp/v2/posts" }],
+      "about": [{ "href": "http://wp-next.com/wp-json/wp/v2/types/post" }],
+      "author": [{ "embeddable": true, "href": "http://wp-next.com/wp-json/wp/v2/users/1" }],
+      "replies": [
+        { "embeddable": true, "href": "http://wp-next.com/wp-json/wp/v2/comments?post=141" }
+      ],
+      "version-history": [
+        { "count": 1, "href": "http://wp-next.com/wp-json/wp/v2/posts/141/revisions" }
+      ],
+      "predecessor-version": [
+        { "id": 142, "href": "http://wp-next.com/wp-json/wp/v2/posts/141/revisions/142" }
+      ],
+      "wp:attachment": [{ "href": "http://wp-next.com/wp-json/wp/v2/media?parent=141" }],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://wp-next.com/wp-json/wp/v2/categories?post=141"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://wp-next.com/wp-json/wp/v2/tags?post=141"
+        }
+      ],
+      "curies": [{ "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }]
+    }
+  },
+  {
+    "id": 1,
+    "date": "2023-11-27T14:17:12",
+    "date_gmt": "2023-11-27T14:17:12",
+    "guid": { "rendered": "http://wp-next.com/?p=1" },
+    "modified": "2023-12-05T18:13:25",
+    "modified_gmt": "2023-12-05T18:13:25",
+    "slug": "hello-world",
+    "status": "publish",
+    "type": "post",
+    "link": "http://wp-next.com/hello-world/",
+    "title": { "rendered": "Hello world!" },
+    "content": {
+      "rendered": "\n<p>Welcome to WordPress. This is your first post. 
+      Edit or delete it, then start writing!</p>\n\n\n\n<p>This is how 
+      wordpress outputs its content from the editor</p>\n\n\n\n<div class=\"wp-block-cover\">
+      <span aria-hidden=\"true\" class=\"wp-block-cover__background has-background-dim\"></span>
+      <img loading=\"lazy\" decoding=\"async\" width=\"732\" height=\"1024\" class=\"wp-block-cover__image-background wp-image-138\" 
+      alt=\"\" src=\"http://wp-next.com/wp-content/uploads/2023/11/Screenshot-2023-11-30-at-16.24.05-732x1024.png\" data-object-fit=\"cover\" 
+      srcset=\"http://wp-next.com/wp-content/uploads/2023/11/Screenshot-2023-11-30-at-16.24.05-732x1024.png 732w,
+       http://wp-next.com/wp-content/uploads/2023/11/Screenshot-2023-11-30-at-16.24.05-214x300.png 214w,
+       http://wp-next.com/wp-content/uploads/2023/11/Screenshot-2023-11-30-at-16.24.05-768x1074.png 768w, 
+       http://wp-next.com/wp-content/uploads/2023/11/Screenshot-2023-11-30-at-16.24.05.png 918w\"
+        sizes=\"(max-width: 732px) 100vw, 732px\" /><div class=\"wp-block-cover__inner-container is-layout-flow
+         wp-block-cover-is-layout-flow\">\n<p class=\"has-text-align-center has-large-font-size\">Testing Texts</p>
+         \n</div></div>\n\n\n\n<p>This is a bit not that good. </p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing! This is how wordpress outputs its content from the editor This is a bit not that good.</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": { "footnotes": "" },
+    "categories": [1],
+    "tags": [],
+    "acf": [],
+    "_links": {
+      "self": [{ "href": "http://wp-next.com/wp-json/wp/v2/posts/1" }],
+      "collection": [{ "href": "http://wp-next.com/wp-json/wp/v2/posts" }],
+      "about": [{ "href": "http://wp-next.com/wp-json/wp/v2/types/post" }],
+      "author": [{ "embeddable": true, "href": "http://wp-next.com/wp-json/wp/v2/users/1" }],
+      "replies": [
+        { "embeddable": true, "href": "http://wp-next.com/wp-json/wp/v2/comments?post=1" }
+      ],
+      "version-history": [
+        { "count": 2, "href": "http://wp-next.com/wp-json/wp/v2/posts/1/revisions" }
+      ],
+      "predecessor-version": [
+        { "id": 221, "href": "http://wp-next.com/wp-json/wp/v2/posts/1/revisions/221" }
+      ],
+      "wp:attachment": [{ "href": "http://wp-next.com/wp-json/wp/v2/media?parent=1" }],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://wp-next.com/wp-json/wp/v2/categories?post=1"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://wp-next.com/wp-json/wp/v2/tags?post=1"
+        }
+      ],
+      "curies": [{ "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }]
+    }
+  }
+]

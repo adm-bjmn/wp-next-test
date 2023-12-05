@@ -5,10 +5,8 @@ async function getDocs() {
   query NewQuery {
     teamMembers {
       nodes {
-        bio
-        image
+        id
         uri
-        title
       }
     }
   }
@@ -23,24 +21,25 @@ async function getDocs() {
         "Content-Type": "application/json",
       },
       next: {
-        revalidate: 10,
+        revalidate: 0,
       },
     },
   );
 
   const { data } = await res.json();
-
+  console.log(data.teamMembers.nodes);
   return data.teamMembers.nodes;
 }
 
 export default async function PostDetails() {
   const members = await getDocs();
+  console.log;
   return (
     <main>
       <nav className="flex space-x-4">
         {members?.map((member, index) => (
           <Link key={index} href={member.uri}>
-            {member.title}
+            {member.id}
           </Link>
         ))}
       </nav>

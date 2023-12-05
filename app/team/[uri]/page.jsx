@@ -4,11 +4,14 @@ async function getTeamMember(uri) {
   const query = `
     query GetTeamMemberByUri($uri: String!) {
       teamMemberBy(uri: $uri) {
-        title
-        uri
-        bio
-        position
-        image
+        id
+        testing {
+          position
+          teamImage {
+            altText
+            mediaItemUrl
+          }
+        }
       }
     }
   `;
@@ -37,13 +40,14 @@ async function getTeamMember(uri) {
 
 export default async function PostDetails({ params }) {
   const post = await getTeamMember(params.uri);
+  console.log(post);
 
   return (
     <main>
       <h1>{post ? post.title : "Loading..."}</h1>
       <h1>{post ? post.position : "Loading..."}</h1>
       <h1>{post ? post.bio : "Loading..."}</h1>
-      <Image src={post.image} alt="team Member Image" width={500} height={500} />
+      <Image src={post.testing.teamImage.mediaItemUrl} alt="alt" width={500} height={500} />
     </main>
   );
 }
